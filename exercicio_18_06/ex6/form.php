@@ -16,9 +16,9 @@
     echo "<h3>O aluno <span style='color: green'>$nome</span> teve as notas <span style='color: green'>$nota1</span>, <span style='color: green'>$nota2</span>, com frequência de <span style='color: green'>$frequencia%</span></h3>";
     if ((($nota1 + $nota2) / 2) < 5)
         echo "<h3>Reprovado por nota</h3>";
-    elseif ($frequencia < 75)
+    if ($frequencia < 75)
         echo "<h3>Reprovado por Frequência</h3>";
-    else
+    if ((($nota1 + $nota2) / 2) >= 5 && $frequencia >= 75)
         echo "<h3>Aprovado</h3>";
     ?>
 </body>
