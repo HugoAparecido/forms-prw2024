@@ -1,0 +1,29 @@
+input {
+    border-radius: 15px;
+    margin: 10px;
+}
+
+form {
+    padding: 5px;
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.principal {
+    border-radius: 15px;
+    background-color: cornflowerblue;
+    padding: 5px;
+}
+
+.local {
+    border-radius: 15px;
+    padding: 5px;
+    background-color: darkgrey;
+}
+
+button {
+    border-radius: 5px;
+}
