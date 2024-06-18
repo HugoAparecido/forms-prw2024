@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Escolha a opção</h1>
+    <fieldset>
+        <form action="form.php" method="post">
+            <div>
+                <label for="prontuario">Prontuário:</label>
+                <input type="text" name="prontuario" id="prontuario">
+            </div>
+            <div>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome">
+            </div>
+            <div>
+                <label for="idade">Idade:</label>
+                <input type="number" name="idade" id="idade" min="0">
+            </div>
+            <div>
+                <label>Período:</label>
+                <input type="text" name="idade" id="idade" placeholder="V ou N">
+            </div>
+            <div>
+                <label>Módulo:</label>
+                <input type="number" name="modulo" id="modulo">
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </fieldset>
+</body>
+
+</html>
