@@ -9,8 +9,8 @@
 
 <body>
     <?php
-    $largura = intval($_GET['largura']);
-    $comprimento = intval($_GET['comprimento']);
+    $largura = floatval($_GET['largura']);
+    $comprimento = floatval($_GET['comprimento']);
     echo "<h3>A área do terreno é <span style='color: green'>" . number_format((floatval($largura) * floatval($comprimento)), 2, ",", ".") . "</span>m<sup>2</sup></h3>";
     ?>
 </body>

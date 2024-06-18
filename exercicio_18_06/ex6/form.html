@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Escolha a opção</h1>
+    <fieldset>
+        <form action="form.php" method="post">
+            <div>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome">
+            </div>
+            <div>
+                <label for="nota1">Primira nota</label>
+                <input type="number" step="0.01" name="nota1" id="nota1">
+            </div>
+            <div>
+                <label for="nota2">SEgunda nota</label>
+                <input type="number" step="0.01" name="nota2" id="nota2">
+            </div>
+            <div>
+                <label for="frequencia">Frequência</label>
+                <input type="number" step="0.01" name="frequencia" id="frequencia" placeholder="80.9">
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </fieldset>
+</body>
+
+</html>
