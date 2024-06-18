@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Escolha a opção</h1>
+    <fieldset>
+        <form action="form.php" method="post">
+            <div>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome">
+            </div>
+            <div>
+                <label for="descricao">Sobre você:</label>
+                <textarea name="descricao" id="descricao" cols="30" rows="10"></textarea>
+            </div>
+            <div>
+                <label for="">Linguagens que você sabe:</label>
+                <input type="checkbox" name="linguagens_que_sabe[]" id="php" value="php"><label for="php">php</label>
+                <input type="checkbox" name="linguagens_que_sabe[]" id="c#" value="c#"><label for="c#">C#</label>
+                <input type="checkbox" name="linguagens_que_sabe[]" id="python" value="python"><label
+                    for="python">python</label>
+                <input type="checkbox" name="linguagens_que_sabe[]" id="java" value="java"><label
+                    for="java">java</label>
+            </div>
+            <div>
+                <label>Matéria Técnica Preferida do 3°</label>
+                <input type="radio" name="materia" id="prw" value="prw">
+                <label for="prw">Programação Para WEB</label>
+                <input type="radio" name="materia" id="redes" value="redes"><label for="redes">Redes de
+                    Computadores</label>
+            </div>
+            <div>
+                <label for="melhor_ano">Melhor Ano</label>
+                <select name="melhor_ano" id="melhor_ano">
+                    <option value="primeiro">1° Ano</option>
+                    <option value="segundo">2° Ano</option>
+                    <option value="terceiro">3° Ano</option>
+                </select>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </fieldset>
+</body>
+
+</html>
