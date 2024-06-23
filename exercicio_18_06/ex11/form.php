@@ -10,20 +10,20 @@
 <body>
     <?php
     $err = 0;
-    if (isset($_POST['prontuario']))
+    if (isset($_POST['prontuario']) && !empty($_POST['prontuario']))
         $prontuario = $_POST['prontuario'];
     else {
         echo "<h3>Prontuário não deve estar em branco</h3>";
         $err = 1;
     }
-    if (isset($_POST['nome']))
+    if (isset($_POST['nome']) && !empty($_POST['nome']))
         $nome = $_POST['nome'];
     else {
         echo "<h3>Nome não deve estar em branco</h3>";
         $err = 1;
     }
     if (isset($_POST['idade'])) {
-        if ($_POST['idade'] >= 15 && $_POST['idade'] <= 75)
+        if (intval($_POST['idade']) >= 15 && intval($_POST['idade']) <= 75)
             $idade = $_POST['idade'];
         else {
             echo "<h3>A idade deve estar entre 15 e 75 anos</h3>";
