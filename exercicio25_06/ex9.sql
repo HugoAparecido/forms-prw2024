@@ -1,0 +1,1 @@
+DELETE FROM Cidade WHERE id = 4;

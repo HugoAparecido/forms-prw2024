@@ -1,0 +1,1 @@
+UPDATE Cliente SET nome = "Cássio Stersi" WHERE id = 1;

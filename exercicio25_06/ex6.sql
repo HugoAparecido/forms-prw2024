@@ -1,0 +1,1 @@
+SELECT * FROM Cliente WHERE id_cidade = 1;

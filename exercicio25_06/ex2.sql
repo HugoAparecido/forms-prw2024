@@ -1,0 +1,14 @@
+CREATE TABLE Cidade (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    estado VARCHAR(02) NOT NULL,
+    nome VARCHAR(50) NOT NULL
+);
+CREATE TABLE Cliente (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(50) NOT NULL,
+    email VARCHAR(50) NOT NULL,
+    senha VARCHAR(10) NOT NULL,
+    ativo BOOL NOT NULL,
+    id_cidade INT NOT NULL,
+    CONSTRAINT FK_ClienteCidade FOREIGN KEY (id_cidade) REFERENCES Cidade(id)
+)

@@ -1,0 +1,1 @@
+UPDATE Cidade SET nome = "Bauru" WHERE id = 1;
